@@ -1,0 +1,522 @@
+html {
+    min-height: calc(100vh - 160px);
+    padding-bottom: 160px;
+    position: relative;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {background-color: #e04243; height: 120px;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    float: left;
+    width: 150px;
+    text-align: center;} 
+
+nav {
+    padding: 34px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-logo {
+    height: 120px;
+}
+
+.header-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url('bilder/indexfoto.jpg') center, center/cover, no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 80px;
+    font-style: oblique;
+    color: #fff;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.taste {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+    background: #e04243;
+}
+
+.reisekarte-wrapper {
+    margin: 50px 0 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, minmax(350px, auto));
+    grid-auto-rows: minmax(350px, auto);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 100px;
+}
+
+.reisekarte {
+    position: relative;
+    text-decoration: none;
+    height: calc(100% - 50px);
+    background: transparent;
+    padding: 25px 20px;
+    border: none;
+    box-shadow: 0px 3px 10px 0px #949494;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.reisekarte:hover {
+    box-shadow: 0px 3px 10px 0px #292929;
+}
+
+.reisekarte-city {
+    font-size: 25px;
+    margin-top: 35px;
+    text-align-last: left;
+    color: #262626;
+}
+
+.reisekarte-text {
+    margin-top: 15px;
+    text-align: justify;
+    color: #6b6b6b;
+}
+
+.reisekarte-logo {
+    height: 120px;
+    width: 230px;
+}
+
+.icon {
+    padding: 0;
+}
+
+.foto {
+    padding-top: 100px;
+    text-align: left;
+    height: 100%;
+    background-image: url("bilder/flugzeug_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #262626;
+}
+
+.footer-item {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+}
+
+.footer-img {
+    height: 120px;
+}
+
+.main-uberuns {
+    height: 100%;
+    padding: 30px 0;
+}
+
+.main-uberuns-wrapper {
+    
+    padding: 50px 40px;
+    border-right: 1px solid#e04243;
+    padding-right: 70px;
+}
+
+
+.main-uberuns-title {
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-uberuns-text {
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.angebote {
+    position: relative;
+    padding: 60px 0;
+}
+
+.angebote-sales {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    width: 250px;
+}
+
+.angebote-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.angebote-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 547.5px);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    gap: 25px;
+}
+
+.angebote-card {
+    position: relative;
+    background: url('bilder/mallorca-bucht-mit-meer-und-stadt.png') center, center/cover, no-repeat;
+    border-radius: 10px;
+    box-shadow: inset 2px 0px 40px 2px #333;
+}
+
+.angebote-card:nth-child(2) {
+    background: url('bilder/aegypten-unterwasser-riff-mit-fischen.jpg') center, center/cover, no-repeat;
+}
+
+.angebote-card:nth-child(3) {
+    background: url('bilder/imagethailand.jpg') center, center/cover, no-repeat;
+}
+
+.angebote-card:nth-child(4) {
+    background: url('bilder/kiew.png') center, center/cover, no-repeat;
+}
+
+.angebote-card:nth-child(5) {
+    background: url('bilder/tuerkei-badestrand-mit-bucht-und-felsen-rl.png') center, center/cover, no-repeat;
+}
+
+.angebote-card:nth-child(6) {
+    background: url('bilder/teneriffa-kanarische-inseln-strand.jpg') center, center/cover, no-repeat;
+}
+
+.angebote-name {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.angebote-price {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 22px;
+    transition: .5s;
+    animation: heartbeat 1.5s ease infinite;
+    color: rgb(255, 60, 0);
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.impressum {
+    padding: 60px 0;
+}
+
+.impressum-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.impressum-info {
+    padding-right: 50px;
+    border-right: 1px solid #e04243;
+}
+
+.impressum-title {
+    font-size: 40px;
+    color: #e04243;
+}
+
+.impressum-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.impressum-map {
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0px 3px 14px 1px #292929;
+}
+
+.impressum-subtitle {
+    font-size: 32px;
+    color: #e04243;
+}
+
+.impressum-iframe {
+    margin-top: 20px;
+}
+
+.kontakt {
+    padding: 60px 0;
+}
+
+.kontakt-wrapper {
+    box-shadow: 0px 3px 14px 1px #292929;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+
+.kontakt-img {
+    width: 100%;
+    height: 370px;
+    border-radius: 10px 10px 0 0;
+}
+
+.kontakt-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.kontakt-title {
+    color: #e04243;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.kontakt-text span {
+    color: #e04243;
+}
+
+.personal {
+    padding: 60px 0;
+}
+
+.personal-title, .galerie-title {
+    color: #e04243;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.personal-wrapper {
+    overflow: hidden;
+}
+
+.personal-slider {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 75px;
+    transition: .5s;
+}
+
+.personal-slide {
+    box-shadow: 0px 3px 14px 1px #292929;
+    padding: 25px 30px;
+    height: 350px;
+    width: 535px;
+}
+
+.personal-dop {
+    position: relative;
+}
+
+.personal-name {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.personal-work {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #656565;
+}
+
+.personal-img {
+    height: 250px;
+    object-fit: contain;
+}
+
+.personal-right {
+    position: absolute;
+    right: -100px;
+    top: calc(50% + 25px);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.personal-left {
+    position: absolute;
+    left: -100px;
+    top: calc(50% + 25px);
+    transform: translateY(-50%) rotate(-180deg);
+    cursor: pointer;
+}
+
+.galerie {
+    position: relative;
+    padding: 60px 0;
+}
+
+.galerie-wrapper {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerie-carousel {
+    position: relative;
+    width: 630px;
+    height: 630px;
+    perspective: 1000px;
+}
+
+.galerie-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-701px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.galerie-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 10px;
+    top: 10px;
+    line-height: 116px;
+    color: #fff;
+    font-family: Titillium Web;
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.galerie-slide img {
+    width: 600px;
+    height: 600px;
+}
+
+.galerie-slide:nth-child(1) {
+    transform: rotateY(0deg) translateZ(650px);
+    background: url('bilder/stambul.jpg') center center/cover no-repeat;
+}
+.galerie-slide:nth-child(2) {
+    transform: rotateY(60deg) translateZ(650px);
+    background: url('bilder/rome.png') center center/cover no-repeat;
+}
+.galerie-slide:nth-child(3) {
+    transform: rotateY(120deg) translateZ(650px);
+    background: url('bilder/berlin.jpg') center center/cover no-repeat;
+}
+.galerie-slide:nth-child(4) {
+    transform: rotateY(180deg) translateZ(650px);
+    background: url('bilder/france.jpg') center center/cover no-repeat;
+}
+.galerie-slide:nth-child(5) {
+    transform: rotateY(240deg) translateZ(650px);
+    background: url('bilder/amsterdam.jpg') center center/cover no-repeat;
+}
+.galerie-slide:nth-child(6) {
+    transform: rotateY(300deg) translateZ(650px);
+    background: url('bilder/barcelona.png') center center/cover no-repeat;
+}
+
+.galerie-left {
+    position: absolute;
+    top: 50%;
+    left: 335px;
+    transform: translateX(-50%) rotate(180deg);
+    cursor: pointer;
+}
+
+.galerie-right {
+    position: absolute;
+    top: 50%;
+    right: 250px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
